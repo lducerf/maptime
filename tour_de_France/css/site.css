@@ -1,0 +1,219 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600,700,300italic);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 62.5%;
+  background-image: url("../images/white_texture.png");
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  font-size: 1.0em;
+  width: 1200px;
+  height: 800px;
+  margin: 10px auto;
+  padding: 0px;
+  border: 1px solid lightgray;
+  overflow: hidden;
+  box-shadow: 8px 8px 12px gray;
+  color: black;
+  background-color: white;
+}
+
+h1, h2, #timeline {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+header {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  line-height: 75px;
+  background-color: white;
+  border-bottom: 10px solid gold;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 3.0em;
+  text-align: center;
+}
+
+#map {
+  float: left;
+  width: 700px;
+  height: 700px;
+  margin: 10px;
+  background: white;
+  z-index: 10;
+}
+
+#timeline {
+  float: left;
+  margin-top: 10px;
+  width: 60px;
+  height: 700px;
+  color: black;
+  background: white;
+  box-shadow: 1px 1px 3px gray;
+  font-size: 1.6em;
+  text-align: center;
+  z-index: 10;
+}
+
+.tl-header {
+  width: 58px;
+  height: 40px;
+  line-height: 40px;
+  margin: auto;
+  border-bottom: 1px solid gold;
+  margin-bottom: 5px;
+}
+
+.tl-header:hover {
+  color: gold;
+  transition: 0.2s;
+}
+
+.tl-item {
+  display: table;
+  width: 50px;
+  height: 21px;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px dotted lightgray;
+}
+
+.tl-item[id]:hover {
+  color: gold;
+  transition: 0.2s;
+}
+
+.tl-item > span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tl-rest {
+  color: gray;
+}
+
+.tl-active {
+  background: linear-gradient(to right, white, gold 30%, gold 70%, white);
+  transition: background 0.5s;
+}
+
+.slide {
+  padding-top: 90px;
+  padding-left: 790px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.stage-header {
+  width: 400px;
+  height: 70px;
+  line-height: 20px;
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+  color: white;
+  background: gray;
+}
+
+.stage-comment {
+  line-height: 1.5;
+  padding: 5px;
+  font-size: 1.5em;
+  color: gray;
+  background: white;
+}
+
+.stage-img {
+  max-width: 350px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  margin: 20px auto;
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.stage-img img {
+  display: block;
+  max-width: 350px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  border: 2px solid white;
+}
+
+.stage-img img:hover {
+  border: 2px solid gold;
+  transition: 0.5s;
+}
+
+.img-caption {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.img-caption a {
+  text-decoration: none;
+}
+
+.img-caption a:link, .img-caption a:visited {
+  background-color: gold;
+}
+
+.lightbox {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  padding-top: 10px;
+}
+
+.lightbox img {
+  display: block;
+  max-width: 1200px;
+  max-height: 800px;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.lightbox-caption {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+}
+
+.lightbox-caption a {
+  text-decoration: none;
+}
+
+.lightbox-caption a:link, .lightbox-caption a:visited {
+  color: gold;
+}
